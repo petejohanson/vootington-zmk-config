@@ -18,3 +18,12 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: vootington
+  - board: vootington
+    snippet: "cdc-acm-console;zmk-analog-matrix-calibrator"
+    artifact-name: vootington_calibrator
+  - board: vootington
+    snippet: "studio-rpc-usb-uart"
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: vootington_studio
